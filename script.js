@@ -9,20 +9,20 @@ const filterOptions = document.getElementById('filterOptions');
 // https://www.jsdelivr.com/tools/purge
 const zonesurls = [
     "https://cdn.jsdelivr.net/%67%68/%67%6e%2d%6d%61%74%68/%61%73%73%65%74%73@%6d%61%69%6e/%7a%6f%6e%65%73%2e%6a%73%6f%6e",
-    "https://raw.githubusercontent.com/gnmathcopy/assets/main/zones.json",
-    "https://cdn.jsdelivr.net/gh/gnmathcopy/assets@master/zones.json",
-    "https://raw.githubusercontent.com/gnmathcopy/assets/main/zones.json"
+    "https://raw.githubusercontent.com/gnmathcopy2/assets/main/zones.json",
+    "https://cdn.jsdelivr.net/gh/gnmathcopy2/assets@master/zones.json",
+    "https://raw.githubusercontent.com/gnmathcopy2/assets/main/zones.json"
 ];
-let zonesURL = "https://raw.githubusercontent.com/gnmathcopy/assets/main/zones.json";
-const coverURL = "https://cdn.jsdelivr.net/gh/gnmathcopy/covers@main";
-const htmlURL = "https://cdn.jsdelivr.net/gh/gnmathcopy/html@main";
+let zonesURL = "https://raw.githubusercontent.com/gnmathcopy2/assets/main/zones.json";
+const coverURL = "https://cdn.jsdelivr.net/gh/gnmathcopy2/covers@main";
+const htmlURL = "https://cdn.jsdelivr.net/gh/gnmathcopy2/html@main";
 let zones = [];
 let popularityData = {};
 const featuredContainer = document.getElementById('featuredZones');
 async function listZones() {
     try {
         // Стабильный URL на zones.json
-        let zonesURL = "https://raw.githubusercontent.com/gnmathcopy/assets/main/zones.json";
+        let zonesURL = "https://raw.githubusercontent.com/gnmathcopy2/assets/main/zones.json";
 
         // Загружаем JSON
         const response = await fetch(zonesURL + "?t=" + Date.now());
@@ -865,6 +865,7 @@ document.addEventListener("DOMContentLoaded", () => {
         randomBtn.addEventListener("click", randomZone);
     }
 });
+
 
 
 
